@@ -51,6 +51,12 @@ class PostController extends Controller
      */
     public function actionView($id)
     {
+//     	$post=\Yii::$app->db->createCommand("select *from post")->queryOne();
+//     	var_dump($post);
+//         $model = Post::findAll(['status' => 1]);
+//         var_dump($model);
+        
+//     	exit(0);
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
